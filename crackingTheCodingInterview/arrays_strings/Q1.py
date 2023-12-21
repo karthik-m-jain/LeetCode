@@ -22,7 +22,7 @@ print(isUnique("KarthiK"))
 
 """
     Time-complexity = O(n) precisely it is O(c) where C is the length of character set
-    Space-complexity = O(1)
+    Space-complexity = O(n) as we create a new set of size 'n'
 
     Alternative solutions:
     1. Check each character with every other character = O(n^2)
