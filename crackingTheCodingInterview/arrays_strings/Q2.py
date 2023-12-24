@@ -31,7 +31,7 @@ print(isPermutation("God", "ogd"))
 
 """
     Time-complexity = O(n)
-    Space-complexity = o(n)
+    Space-complexity = O(n)
 
     Alternative solutions:
     1. Check presence of each character of child string in parent string = O(n^2)
