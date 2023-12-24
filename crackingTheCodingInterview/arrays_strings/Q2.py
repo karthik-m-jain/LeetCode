@@ -34,6 +34,5 @@ print(isPermutation("God", "ogd"))
     Space-complexity = O(n)
 
     Alternative solutions:
-    1. Check presence of each character of child string in parent string = O(n^2)
-    2. Arrange each character of string in ascending order = O(nlogn)
+    1. Arrange each character of string in ascending order = O(nlogn)
 """
