@@ -15,3 +15,8 @@ def isPairSum(nums: List[int], target: int) -> bool:
     return False
 
 print(isPairSum([2,3,5,8,9,10,11], 17))
+
+"""
+    Time-complexity = O(nlogn) - For sorting
+    Space-complexity = O(1)
+"""
