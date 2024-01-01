@@ -8,11 +8,13 @@ Question:
     Input: s = "abcabcbb"
     Output: 3
     Explanation: The answer is "abc", with the length of 3.
+    
     Example 2:
 
     Input: s = "bbbbb"
     Output: 1
     Explanation: The answer is "b", with the length of 1.
+
     Example 3:
 
     Input: s = "pwwkew"
@@ -40,8 +42,8 @@ solution = Solution()
 
 print(solution.lengthOfLongestSubstring("pwwkeaw"))
 """
-    Time-complexity = 
-    Space-complexity = 
+    Time-complexity = O(n)
+    Space-complexity = O(1)
 
     Alternative solutions:
 """
