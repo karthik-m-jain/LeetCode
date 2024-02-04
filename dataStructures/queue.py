@@ -34,8 +34,8 @@ print(solution.isEmpty())
 
 """
     Time-complexity = 
-    1. push = O(1)
-    2. pop = O(1)
+    1. add = O(1)
+    2. remove = O(1)
     3. peek = O(1)
     4. isEmpty = O(1)
 
