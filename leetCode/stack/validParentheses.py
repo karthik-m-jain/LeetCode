@@ -55,4 +55,5 @@ print(solution.isValid('(){}'))
     Space-complexity = O(n)
 
     Alternative solutions:
+    1. Use if-else instead of Hash-map
 """
