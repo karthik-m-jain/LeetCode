@@ -52,8 +52,9 @@ solution = MinStack()
 print(solution, solution.push(-2), solution.push(0), solution.push(-3), solution.getMin(), solution.pop(), solution.top(), solution.getMin()) 
 
 """
-    Time-complexity = 
-    Space-complexity = 
+    Time-complexity = O(1)
+    Space-complexity = O(n)
 
     Alternative solutions:
+    1. Use inbuilt library function to get min value each time
 """
