@@ -73,7 +73,6 @@ solution = Solution()
 
 print(solution.evalRPN(["10","6","9","3","+","-11","*","/","*","17","+","5","+"]))
 
-
 """
     Time-complexity = O(n)
     Space-complexity = O(n)
