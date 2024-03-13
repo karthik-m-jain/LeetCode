@@ -16,6 +16,7 @@ Question: 104. Maximum Depth of Binary Tree
     Output: 2
 """
 from typing import Optional
+from typing import Deque
 
 # Definition for a binary tree node.
 class TreeNode:
@@ -26,13 +27,52 @@ class TreeNode:
 
 class Solution:
     def maxDepth(self, root: Optional[TreeNode]) -> int:
+        #Solution 1 -> Recursive DFS
+        """
         if root is None:
             return 0
         
         l = self.maxDepth(root.left)
         r = self.maxDepth(root.right)
 
-        return max(l+1, r+1)
+        return 1 + max(l, r)
+        """
+
+        #Solution 2 -> Iterative DFS
+        """
+        stack = [[root, 1]]
+        result = 0
+
+        while stack:
+            node, depth = stack.pop()
+
+            if node:
+                result = max(result, depth)
+                stack.append([node.left, depth + 1])
+                stack.append([node.right, depth + 1])
+
+        return result
+        """
+
+        #Solution 3 -> Recursive BFS
+        if not root:
+            return 0
+
+        queue = Deque([root])
+        level = 0
+        
+        while queue:
+            for i in range(len(queue)):
+                node = queue.popleft()
+
+                if node.left:
+                    queue.append(node.left)
+                if node.right:
+                    queue.append(node.right)
+
+            level += 1
+
+        return level
 
 sol = Solution()
 root = TreeNode(1)
@@ -46,7 +86,10 @@ print(sol.maxDepth(root))
 
 """
     Time-complexity = O(n)
-    Space-complexity = O(n)
+    Space-complexity = O(n) - Height of the tree - In this, it is the worst-csae
 
     Alternative solutions:
+    1. Recursive DFS (Implemented)
+    2. Iterative BFS (No-change in complexities)
+    3. Recursive BFS (No-change in complexities)
 """
