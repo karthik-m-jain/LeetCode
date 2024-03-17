@@ -22,7 +22,7 @@ Question: 226. Invert Binary Tree
 import sys
 
 from typing import Optional
-from binaryTree import TreeTraversal
+from dataStructures.binaryTree import TreeTraversal
 
 # Definition for a binary tree TreeNode.
 class TreeNode:
