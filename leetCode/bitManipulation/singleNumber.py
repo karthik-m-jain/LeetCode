@@ -28,8 +28,8 @@ sol = Solution()
 print(sol.singleNumber([4,1,2,1,2]))
 
 """
-    Time-complexity = 
-    Space-complexity = 
+    Time-complexity = O(n)
+    Space-complexity = O(1)
 
     Alternative solutions:
 """
