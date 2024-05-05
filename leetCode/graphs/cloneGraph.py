@@ -44,6 +44,9 @@ class Node:
 from typing import Optional
 class Solution:
     def cloneGraph(self, node: Optional['Node']) -> Optional['Node']:
+
+        # Hashmap and DFS 
+
         if not node:
             return 
         
