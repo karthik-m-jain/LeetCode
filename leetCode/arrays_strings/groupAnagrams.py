@@ -51,4 +51,5 @@ print(solution.groupAnagrams([""]))
     Space-complexity = O(m)
 
     Alternative solutions:
+    1. Sort each word and group them
 """
