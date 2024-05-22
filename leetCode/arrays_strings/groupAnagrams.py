@@ -26,7 +26,8 @@ from typing import List
 class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
         
-        #for any key not already present in the dictionary, the default value should be an empty list ([]).
+        # For any key not already present in the dictionary, the default value should be an empty list ([]).
+        # This avoids KeyError exceptions when accessing or modifying entries for keys that do not yet exist in the dictionary.
         result = defaultdict(list)
 
         for i in strs:
@@ -34,6 +35,8 @@ class Solution:
             for j in i:
                 count[ord(j) - ord('a')] += 1
             
+            # No need to check if 'count' exists; initialized to an empty list by default
+            # As dictionary can't have a list as key, as it is mutable it is converted into tuple
             result[tuple(count)].append(i)
         
         return result.values()
