@@ -45,6 +45,7 @@ class Solution:
         pairs = [[p, s] for p, s in zip(position, speed)]
         stack = []
         
+        #  lexicographical order (first elements are equal, it compares the second elements, and so on)
         for p, s in sorted(pairs)[::-1]:      # Reverse sorted list  
             stack.append((target - p) / s)
             if len(stack) >= 2 and stack[-1] <= stack[-2]:
