@@ -27,11 +27,14 @@ Question: 21. Merge Two Sorted List
     Both list1 and list2 are sorted in non-decreasing order.
 
 """
+from typing import Optional
+
 # Definition for singly-linked list.
-# class ListNode:
-#     def __init__(self, val=0, next=None):
-#         self.val = val
-#         self.next = next
+
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
 
 #TODO: make it executable
 
@@ -53,16 +56,14 @@ class Solution:
             tail = tail.next
             print("Iter: ", dummy.next)
 
-        if list1:
-            tail.next = list1
-        elif list2:
-            tail.next = list2
+        tail.next = list1 or list2
         
         return dummy.next
         
 """
     Time-complexity = O(min(list1, list2))
-    Space-complexity = O(list1 + list2)
+    Space-complexity = O(1)
 
     Alternative solutions:
+    1. Recursive implementation
 """
