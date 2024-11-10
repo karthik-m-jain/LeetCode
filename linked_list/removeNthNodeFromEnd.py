@@ -30,7 +30,7 @@ class Solution:
         dummy = ListNode(0, head)
         left, right = dummy, head
         
-        while n > 0 and right:
+        while n > 0:
             right = right.next
             n -= 1
         
