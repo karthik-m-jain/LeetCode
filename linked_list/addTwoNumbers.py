@@ -45,8 +45,8 @@ class Solution:
         return dummy.next
 
 """
-    Time-complexity = 
-    Space-complexity = 
+    Time-complexity = O(n)
+    Space-complexity = O(n)
 
     Alternative solutions:
 """
